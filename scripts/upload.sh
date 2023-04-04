@@ -18,7 +18,7 @@ echo "============================"
 cd out/target/product/${DEVICE}
 
 if [ "$TARGET" = "recoveryimage" ]; then
-zip $OUTPUT recovery.img
+zip $OUTPUT *.zip
 fi
 
 # Set FILENAME var
