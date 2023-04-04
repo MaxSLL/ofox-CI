@@ -17,8 +17,8 @@ echo "============================"
 # Change to the Output Directory
 cd out/target/product/${DEVICE}
 
-if [ "$TARGET" = "vendorbootimage" ]; then
-zip $OUTPUT vendor_boot.img
+if [ "$TARGET" = "recoveryimage" ]; then
+zip $OUTPUT recovery.img
 fi
 
 # Set FILENAME var
