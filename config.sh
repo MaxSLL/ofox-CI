@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Device
-export FOX_BRANCH="fox_12.1"
-export DT_LINK="https://gitlab.com/OrangeFox/device/mikona"
+export FOX_BRANCH="fox_11.0"
+export DT_LINK="https://github.com/MaxSLL/twrp_215 -b ofox-11"
 
-export DEVICE="munch"
-export OEM="xiaomi"
-export TARGET="adbd bootimage"
+export DEVICE="m21"
+export OEM="samsung"
+export TARGET="recoveryimage"
 
 # supported targets : 
 # 1. recoveryimage
@@ -21,7 +21,7 @@ export OUTPUT="OrangeFox*.zip"
 #export PLATFORM="sm6150" # Leave it commented if you want to clone the kernel to kernel/$OEM/$DEVICE
 
 # Extra Command
-export EXTRA_CMD="export FOX_VARIANT="A12/A13" && export FOX_BUILD_TYPE="official" && export FOX_BUILD_DEVICE="munch""
+export EXTRA_CMD="export FOX_VARIANT="A12/A13" && export FOX_BUILD_TYPE="official" && export FOX_BUILD_DEVICE="m21""
 
 # Magisk
 ## Use the Latest Release of Magisk for the OrangeFox addon
@@ -49,5 +49,5 @@ if [ ! -z "$PLATFORM" ]; then
 else
     export KERNEL_PATH="kernel/$OEM/$DEVICE"
 fi
-export DT_PATH="device/$OEM/mikona"
+export DT_PATH="device/$OEM/m21"
 #
